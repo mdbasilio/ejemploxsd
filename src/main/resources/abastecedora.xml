@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="e6390d9b-e1bc-4a5a-ad26-7e0299e5bdc5" activeEnvironment="Default" name="ServicioAbastecedoraService" resourceRoot="" soapui-version="5.6.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="930058d4-ce8e-4516-b246-8586ddc77240" wsaVersion="NONE" name="ServicioAbastecedoraPortBinding" type="wsdl" bindingName="{com.bb.servicios.ContratoAbastecedora}ServicioAbastecedoraPortBinding" soapVersion="1_1" anonymous="optional" definition="file:/C:/Users/johanna.guano/Downloads/ServicioAbastecedoraService.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:\C:\Users\johanna.guano\Downloads\ServicioAbastecedoraService.wsdl"><con:part><con:url>file:\C:\Users\johanna.guano\Downloads\ServicioAbastecedoraService.wsdl</con:url><con:content><![CDATA[<definitions name="ServicioAbastecedoraService" targetNamespace="com.bb.servicios.ContratoAbastecedora" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="com.bb.servicios.ContratoAbastecedora" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <types>
+    <xsd:schema>
+      <xsd:import namespace="com.bb.servicios.ContratoAbastecedora" schemaLocation="ServicioAbastecedoraService_schema1.xsd"/>
+    </xsd:schema>
+  </types>
+  <message name="conciliarFacturaUnica">
+    <part name="parameters" element="tns:conciliarFacturaUnica"></part>
+  </message>
+  <message name="anularFacturaUnicaResponse">
+    <part name="parameters" element="tns:anularFacturaUnicaResponse"></part>
+  </message>
+  <message name="conciliarFacturaUnicaResponse">
+    <part name="parameters" element="tns:conciliarFacturaUnicaResponse"></part>
+  </message>
+  <message name="verificarOrdenEntregaResponse">
+    <part name="parameters" element="tns:verificarOrdenEntregaResponse"></part>
+  </message>
+  <message name="anularFacturaUnica">
+    <part name="parameters" element="tns:anularFacturaUnica"></part>
+  </message>
+  <message name="verificarOrdenEntrega">
+    <part name="parameters" element="tns:verificarOrdenEntrega"></part>
+  </message>
+  <message name="enviarFacturaUnicaResponse">
+    <part name="parameters" element="tns:enviarFacturaUnicaResponse"></part>
+  </message>
+  <message name="enviarFacturaUnica">
+    <part name="parameters" element="tns:enviarFacturaUnica"></part>
+  </message>
+  <portType name="ServicioAbastecedora">
+    <operation name="enviarFacturaUnica">
+      <input message="tns:enviarFacturaUnica"></input>
+      <output message="tns:enviarFacturaUnicaResponse"></output>
+    </operation>
+    <operation name="anularFacturaUnica">
+      <input message="tns:anularFacturaUnica"></input>
+      <output message="tns:anularFacturaUnicaResponse"></output>
+    </operation>
+    <operation name="conciliarFacturaUnica">
+      <input message="tns:conciliarFacturaUnica"></input>
+      <output message="tns:conciliarFacturaUnicaResponse"></output>
+    </operation>
+    <operation name="verificarOrdenEntrega">
+      <input message="tns:verificarOrdenEntrega"></input>
+      <output message="tns:verificarOrdenEntregaResponse"></output>
+    </operation>
+  </portType>
+  <binding name="ServicioAbastecedoraPortBinding" type="tns:ServicioAbastecedora">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="enviarFacturaUnica">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="anularFacturaUnica">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="conciliarFacturaUnica">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="verificarOrdenEntrega">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <service name="ServicioAbastecedoraService">
+    <port name="ServicioAbastecedoraPort" binding="tns:ServicioAbastecedoraPortBinding">
+      <soap:address location="http://172.16.11.13:9080/FacturacionBB/ServicioAbastecedoraService"/>
+    </port>
+  </service>
+</definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>file:\C:\Users\johanna.guano\Downloads\ServicioAbastecedoraService_schema1.xsd</con:url><con:content><![CDATA[<xs:schema version="1.0" targetNamespace="com.bb.servicios.ContratoAbastecedora" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="com.bb.servicios.ContratoAbastecedora">
+  <xs:element name="anularFacturaUnica" type="tns:anularFacturaUnica"/>
+  <xs:element name="anularFacturaUnicaResponse" type="tns:anularFacturaUnicaResponse"/>
+  <xs:element name="conciliarFacturaUnica" type="tns:conciliarFacturaUnica"/>
+  <xs:element name="conciliarFacturaUnicaResponse" type="tns:conciliarFacturaUnicaResponse"/>
+  <xs:element name="enviarFacturaUnica" type="tns:enviarFacturaUnica"/>
+  <xs:element name="enviarFacturaUnicaResponse" type="tns:enviarFacturaUnicaResponse"/>
+  <xs:element name="verificarOrdenEntrega" type="tns:verificarOrdenEntrega"/>
+  <xs:element name="verificarOrdenEntregaResponse" type="tns:verificarOrdenEntregaResponse"/>
+  <xs:complexType name="verificarOrdenEntrega">
+    <xs:sequence>
+      <xs:element name="tramaoe" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="verificarOrdenEntregaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="anularFacturaUnica">
+    <xs:sequence>
+      <xs:element name="tramaanulafu" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="anularFacturaUnicaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="conciliarFacturaUnica">
+    <xs:sequence>
+      <xs:element name="tramaconcilia" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="conciliarFacturaUnicaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enviarFacturaUnica">
+    <xs:sequence>
+      <xs:element name="tramaenviofu" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enviarFacturaUnicaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://172.16.11.13:9080/FacturacionBB/ServicioAbastecedoraService</con:endpoint></con:endpoints><con:operation id="9585c27f-1283-4b33-8a9f-6856763ff949" isOneWay="false" action="" name="anularFacturaUnica" bindingOperationName="anularFacturaUnica" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="46c7898c-312d-45de-8805-1d57ada53758" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://172.16.11.13:9080/FacturacionBB/ServicioAbastecedoraService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="com.bb.servicios.ContratoAbastecedora">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <com:anularFacturaUnica>\r
+         <!--Optional:-->\r
+         <tramaanulafu>?</tramaanulafu>\r
+      </com:anularFacturaUnica>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="com.bb.servicios.ContratoAbastecedora/ServicioAbastecedora/anularFacturaUnicaRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="6a1d262e-019d-45b8-8370-57b5418b91cd" isOneWay="false" action="" name="conciliarFacturaUnica" bindingOperationName="conciliarFacturaUnica" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b8929107-9fd6-4c1a-9b76-3317e41b6517" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://172.16.11.13:9080/FacturacionBB/ServicioAbastecedoraService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="com.bb.servicios.ContratoAbastecedora">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <com:conciliarFacturaUnica>\r
+         <!--Optional:-->\r
+         <tramaconcilia>?</tramaconcilia>\r
+      </com:conciliarFacturaUnica>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="com.bb.servicios.ContratoAbastecedora/ServicioAbastecedora/conciliarFacturaUnicaRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="d132afd4-23a8-4b4c-acb9-6eec33fd641c" isOneWay="false" action="" name="enviarFacturaUnica" bindingOperationName="enviarFacturaUnica" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a6cc1a88-bf13-418f-b159-8e75b60daa17" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://172.16.11.13:9080/FacturacionBB/ServicioAbastecedoraService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="com.bb.servicios.ContratoAbastecedora">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <com:enviarFacturaUnica>\r
+         <!--Optional:-->\r
+         <tramaenviofu>?</tramaenviofu>\r
+      </com:enviarFacturaUnica>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="com.bb.servicios.ContratoAbastecedora/ServicioAbastecedora/enviarFacturaUnicaRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="f30aafd4-09d6-406f-a9c1-92b8434ba77d" isOneWay="false" action="" name="verificarOrdenEntrega" bindingOperationName="verificarOrdenEntrega" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="14bac9ab-b679-4cda-be68-ad477d07a669" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://172.16.11.13:9080/FacturacionBB/ServicioAbastecedoraService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="com.bb.servicios.ContratoAbastecedora">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <com:verificarOrdenEntrega>\r
+         <!--Optional:-->\r
+         <tramaoe>?</tramaoe>\r
+      </com:verificarOrdenEntrega>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="com.bb.servicios.ContratoAbastecedora/ServicioAbastecedora/verificarOrdenEntregaRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
