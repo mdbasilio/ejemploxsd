@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="3.0" xmlns="https://jakarta.ee/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
+Visite https://eclipse-ee4j.github.io/jaxb-ri 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2023.08.21 a las 08:26:13 AM ECT 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="com.bb.servicios.ContratoAbastecedora">
+    <schemaBindings map="false">
+      <package name="contratoabastecedora.servicios.bb.com"/>
+    </schemaBindings>
+    <bindings scd="~tns:anularFacturaUnica">
+      <class ref="contratoabastecedora.servicios.bb.com.AnularFacturaUnica"/>
+    </bindings>
+    <bindings scd="~tns:anularFacturaUnicaResponse">
+      <class ref="contratoabastecedora.servicios.bb.com.AnularFacturaUnicaResponse"/>
+    </bindings>
+    <bindings scd="~tns:conciliarFacturaUnica">
+      <class ref="contratoabastecedora.servicios.bb.com.ConciliarFacturaUnica"/>
+    </bindings>
+    <bindings scd="~tns:conciliarFacturaUnicaResponse">
+      <class ref="contratoabastecedora.servicios.bb.com.ConciliarFacturaUnicaResponse"/>
+    </bindings>
+    <bindings scd="~tns:enviarFacturaUnica">
+      <class ref="contratoabastecedora.servicios.bb.com.EnviarFacturaUnica"/>
+    </bindings>
+    <bindings scd="~tns:enviarFacturaUnicaResponse">
+      <class ref="contratoabastecedora.servicios.bb.com.EnviarFacturaUnicaResponse"/>
+    </bindings>
+    <bindings scd="~tns:verificarOrdenEntrega">
+      <class ref="contratoabastecedora.servicios.bb.com.VerificarOrdenEntrega"/>
+    </bindings>
+    <bindings scd="~tns:verificarOrdenEntregaResponse">
+      <class ref="contratoabastecedora.servicios.bb.com.VerificarOrdenEntregaResponse"/>
+    </bindings>
+  </bindings>
+</bindings>
+
