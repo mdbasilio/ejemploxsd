@@ -1,6 +1,22 @@
-<xs:schema version="1.0" targetNamespace="http://www.baeldung.com/springsoap/gen" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.baeldung.com/springsoap/gen">
-   <xs:element name="anularFacturaUnica" type="tns:anularFacturaUnicaRequest"/>
+<xs:schema version="1.0" targetNamespace="http://www.example.com/demosoap/gen" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.example.com/demosoap/gen">
+   <xs:element name="anularFacturaUnicaRequest" type="tns:anularFacturaUnicaRequest"/>
    <xs:element name="anularFacturaUnicaResponse" type="tns:anularFacturaUnicaResponse"/>
+   <xs:element name="conciliarFacturaUnicaRequest" type="tns:conciliarFacturaUnicaRequest"/>
+   <xs:element name="conciliarFacturaUnicaResponse" type="tns:conciliarFacturaUnicaResponse"/>
+   <xs:element name="enviarFacturaUnicaRequest" type="tns:enviarFacturaUnicaRequest"/>
+   <xs:element name="enviarFacturaUnicaResponse" type="tns:enviarFacturaUnicaResponse"/>
+   <xs:element name="verificarOrdenEntregaRequest" type="tns:verificarOrdenEntregaRequest"/>
+   <xs:element name="verificarOrdenEntregaResponse" type="tns:verificarOrdenEntregaResponse"/>
+   <xs:complexType name="verificarOrdenEntregaRequest">
+      <xs:sequence>
+         <xs:element name="tramaoe" type="xs:string" minOccurs="0"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="verificarOrdenEntregaResponse">
+      <xs:sequence>
+         <xs:element name="return" type="xs:string" minOccurs="0"/>
+      </xs:sequence>
+   </xs:complexType>
    <xs:complexType name="anularFacturaUnicaRequest">
       <xs:sequence>
          <xs:element name="tramaanulafu" type="xs:string" minOccurs="0"/>
@@ -11,5 +27,24 @@
          <xs:element name="return" type="xs:string" minOccurs="0"/>
       </xs:sequence>
    </xs:complexType>
-
+   <xs:complexType name="conciliarFacturaUnicaRequest">
+      <xs:sequence>
+         <xs:element name="tramaconcilia" type="xs:string" minOccurs="0"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="conciliarFacturaUnicaResponse">
+      <xs:sequence>
+         <xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="enviarFacturaUnicaRequest">
+      <xs:sequence>
+         <xs:element name="tramaenviofu" type="xs:string" minOccurs="0"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="enviarFacturaUnicaResponse">
+      <xs:sequence>
+         <xs:element name="return" type="xs:string" minOccurs="0"/>
+      </xs:sequence>
+   </xs:complexType>
 </xs:schema>

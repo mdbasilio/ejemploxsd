@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="3.0" xmlns="https://jakarta.ee/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
+Visite https://eclipse-ee4j.github.io/jaxb-ri 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2023.08.21 a las 02:01:03 PM ECT 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://www.example.com/demosoap/gen">
+    <schemaBindings map="false">
+      <package name="com.example.demosoap.gen"/>
+    </schemaBindings>
+    <bindings scd="~tns:anularFacturaUnicaRequest">
+      <class ref="com.example.demosoap.gen.AnularFacturaUnicaRequest"/>
+    </bindings>
+    <bindings scd="~tns:anularFacturaUnicaResponse">
+      <class ref="com.example.demosoap.gen.AnularFacturaUnicaResponse"/>
+    </bindings>
+    <bindings scd="~tns:conciliarFacturaUnicaRequest">
+      <class ref="com.example.demosoap.gen.ConciliarFacturaUnicaRequest"/>
+    </bindings>
+    <bindings scd="~tns:conciliarFacturaUnicaResponse">
+      <class ref="com.example.demosoap.gen.ConciliarFacturaUnicaResponse"/>
+    </bindings>
+    <bindings scd="~tns:enviarFacturaUnicaRequest">
+      <class ref="com.example.demosoap.gen.EnviarFacturaUnicaRequest"/>
+    </bindings>
+    <bindings scd="~tns:enviarFacturaUnicaResponse">
+      <class ref="com.example.demosoap.gen.EnviarFacturaUnicaResponse"/>
+    </bindings>
+    <bindings scd="~tns:verificarOrdenEntregaRequest">
+      <class ref="com.example.demosoap.gen.VerificarOrdenEntregaRequest"/>
+    </bindings>
+    <bindings scd="~tns:verificarOrdenEntregaResponse">
+      <class ref="com.example.demosoap.gen.VerificarOrdenEntregaResponse"/>
+    </bindings>
+  </bindings>
+</bindings>
+
